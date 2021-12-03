@@ -1,10 +1,6 @@
-# blue-template
-A template depends on vite + typescript + vue.
+# level-tree-vue
+a level tree component based on vue
 
-### guide
-1. rename all `blue-template`.
-2. remove any packages if you want.
-3. suit yourself.
 
 ### feature
 1. start

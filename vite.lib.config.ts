@@ -8,7 +8,15 @@ import path from 'path';
 import copy from 'rollup-plugin-copy';
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/blue-template/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/level-tree-vue/' : '/',
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+        math: 'always'
+      }
+    },
+  },
   plugins: [
     vue(),
     copy({
@@ -21,9 +29,17 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'lib/index.ts'),
-      name: 'blue',
+      name: 'LevelTree',
       formats: ['es', 'cjs', 'umd', 'iife'],
-      fileName: (format: string) => `blue.${format}.js`
+      fileName: (format: string) => `level-tree.${format}.js`
+    },
+    rollupOptions: {
+      external: ['vue'],
+      output: {
+        globals: {
+          'vue': 'Vue'
+        }
+      }
     }
   }
 });

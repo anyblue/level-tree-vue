@@ -60,6 +60,7 @@ module.exports = {
       'selfClosingTag': 'never'
     }],
 
+    '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/semi': ['error', 'always'],
     '@typescript-eslint/indent': ['error', 2, {
       'SwitchCase': 1

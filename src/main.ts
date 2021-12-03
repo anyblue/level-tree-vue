@@ -1,6 +1,6 @@
 import {createApp} from 'vue';
-import App from './App.vue';
+import Test from './Test.vue';
 import './assets/css/base.less';
 import './assets/css/theme.less';
 
-createApp(App).mount('#app');
+createApp(Test).mount('#app');

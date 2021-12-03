@@ -1,10 +1,10 @@
 {
-  "name": "blue-template",
+  "name": "level-tree-vue",
   "version": "0.0.1",
   "description": "custom construct for future.",
-  "repository": "fuchunhui/blue-template",
-  "main": "dist/blue-template.cjs.js",
-  "module": "dist/blue-template.es.js",
+  "repository": "anyblue/level-tree-vue",
+  "main": "dist/level-tree.cjs.js",
+  "module": "dist/level-tree.es.js",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -15,10 +15,14 @@
     "commitlint": "node scripts/verify-commit.js"
   },
   "dependencies": {
-    "axios": "^0.21.4"
+    "element-resize-event": "^3.0.6",
+    "lodash": "^4.17.21"
   },
+  "types": "./src/types.ts",
   "devDependencies": {
+    "@types/element-resize-event": "^3.0.0",
     "@types/estree": "^0.0.50",
+    "@types/lodash": "^4.14.177",
     "@types/node": "^16.9.6",
     "@typescript-eslint/eslint-plugin": "^4.31.2",
     "@typescript-eslint/parser": "^4.31.2",
@@ -44,11 +48,10 @@
     "README.md"
   ],
   "keywords": [
-    "blue-template",
-    "vite",
-    "lib"
+    "level-tree",
+    "vue"
   ],
-  "author": "fuchunhui",
+  "author": "anyblue",
   "bugs": {},
   "homepage": "",
   "engines": {

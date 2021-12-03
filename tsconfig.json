@@ -13,7 +13,9 @@
     "useDefineForClassFields": false
   },
   "types": [
-    "node"
+    "node",
+    "lodash",
+    "element-resize-event"
   ],
   "paths": {
     "*": ["*", "src/*"],
