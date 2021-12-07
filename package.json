@@ -1,8 +1,11 @@
 {
   "name": "level-tree-vue",
   "version": "0.0.1",
-  "description": "custom construct for future.",
-  "repository": "anyblue/level-tree-vue",
+  "description": "a level tree component based on vue",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anyblue/level-tree-vue.git"
+  },
   "main": "dist/level-tree.cjs.js",
   "module": "dist/level-tree.es.js",
   "scripts": {
@@ -14,9 +17,8 @@
     "release": "npm run lib && node scripts/release.js",
     "commitlint": "node scripts/verify-commit.js"
   },
-  "dependencies": {
-    "element-resize-event": "^3.0.6",
-    "lodash": "^4.17.21"
+  "peerDependencies": {
+    "vue": "^3.2.14"
   },
   "types": "./src/types.ts",
   "devDependencies": {
@@ -29,12 +31,14 @@
     "@vitejs/plugin-vue": "^1.9.0",
     "@vue/compiler-sfc": "^3.2.14",
     "chalk": "^4.1.2",
+    "element-resize-event": "^3.0.6",
     "enquirer": "^2.3.6",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^7.18.0",
     "execa": "^5.1.1",
     "husky": "^7.0.2",
     "less": "^4.1.1",
+    "lodash": "^4.17.21",
     "minimist": "^1.2.5",
     "rollup-plugin-copy": "^3.4.0",
     "semver": "^7.3.5",
@@ -52,8 +56,11 @@
     "vue"
   ],
   "author": "anyblue",
-  "bugs": {},
-  "homepage": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anyblue/level-tree-vue/issues"
+  },
+  "homepage": "https://github.com/anyblue/level-tree-vue#readme",
   "engines": {
     "node": ">=12.0"
   }
