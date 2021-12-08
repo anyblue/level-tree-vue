@@ -20,7 +20,7 @@
   "peerDependencies": {
     "vue": "^3.2.14"
   },
-  "types": "./src/types.ts",
+  "types": "./src/types/index.ts",
   "devDependencies": {
     "@types/element-resize-event": "^3.0.0",
     "@types/estree": "^0.0.50",
