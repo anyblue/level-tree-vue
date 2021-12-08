@@ -214,7 +214,7 @@ const props = defineProps({
       cardWidth?: number;
     }>,
     required: false,
-    default: () => ({})
+    default: () => defaultSpaceConfig
   },
   childFlagKey: {
     type: String,
