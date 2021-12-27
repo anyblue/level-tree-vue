@@ -48,6 +48,7 @@
           <slot :data="item"/>
           <i
             v-if="item[childFlagKey]"
+            @mousedown.prevent
             @click="expandedChange(item)"
             :class="['show-btn', {
               minus: expandedId === item.id,
