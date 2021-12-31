@@ -17,7 +17,11 @@
           'margin-right': `${spaceConfig.btnMargin}px`
         }"
       >
-        <i @click="move('left')" class="direction left"/>
+        <i
+          @mousedown.prevent
+          @click="move('left')"
+          class="direction left"
+        />
       </span>
       <span
         v-else-if="!parentMiddle && placeholder > 0 && data.length"
@@ -65,7 +69,11 @@
           'margin-left': `${spaceConfig.btnMargin}px`
         }"
       >
-        <i @click="move('right')" class="direction right"/>
+        <i
+          @mousedown.prevent
+          @click="move('right')"
+          class="direction right"
+        />
       </span>
       <span
         v-else-if="!parentMiddle && placeholder < 0 && data.length"
